@@ -43,13 +43,20 @@ body {
   border: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
 .site-nav {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: transparent;
-  list-style: none;
 }
 
 .site-nav a {
@@ -68,11 +75,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.main-header {
+.main-header,.main-slide {
   background-color: var(--basic-fon-dark);
 }
 
-.site-nav a:hover,.basket:hover {
+.site-nav a:hover,.basket:hover,.product-title:hover {
   color: var(--basic-red);
 }
 
@@ -92,19 +99,11 @@ body {
   overflow: hidden;
 }
 
-.main-slide {
-  background-color: var(--basic-fon-dark);
-}
-
 .slide-title {
   font-size: 55px;
   line-height: 55px;
   color: var(--basic-black);
   font-weight: 500;
-}
-
-.slide-list {
-  list-style: none;
 }
 
 .slide-link,.contacts-link {
@@ -119,42 +118,6 @@ body {
   border-radius: 3px;
 }
 
-.slide-link:hover {
-  background-color: var(--basic-red-light);
-}
-
-.slide-link:active {
-  background-color: var(--basic-red-dark);
-}
-
-.service-button.site:hover {
-  background-color: var(--basic-red-light);
-}
-
-.service-button.site:active {
-  background-color: var(--basic-red-dark);
-}
-
-.service-button.applications:hover {
-  background-color: var(--basic-grin-light);
-}
-
-.service-button.applications:active {
-  background-color: var(--basic-grin-dark);
-}
-
-.service-button.presentations:hover {
-  background-color: var(--basic-gold-light);
-}
-
-.service-button.presentations:active {
-  background-color: var(--basic-gold-dark);
-}
-
-.slide-button {
-  list-style: none;
-}
-
 .slide-switch {
   width: 18px;
   height: 18px;
@@ -165,14 +128,6 @@ body {
 .slide-img,.contacts-map-img {
   max-width: 100%;
   height: auto;
-}
-
-.services-list {
-  list-style: none;
-}
-
-.services-link {
-  text-decoration: none;
 }
 
 /*.services-item-site {
@@ -196,7 +151,6 @@ body {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
-
 }
 
 .service-text {
@@ -206,7 +160,6 @@ body {
 }
 
 .service-button {
-  text-decoration: none;
   color: var(--basic-white);
   font-weight: 500;
   line-height: 18px;
@@ -238,10 +191,11 @@ body {
 .about-list-title,.advantages-text {
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 16px;
 }
 
-.about-list,.advantages-list {
-  list-style: none;
+.advantages-text {
+  color: var(--basic-black);
 }
 
 /*.advantages {
@@ -267,10 +221,6 @@ body {
   color: var(--basic-black);
 }
 
-.partners-list {
-  list-style: none;
-}
-
 .contacts-text {
   line-height: 18px;
   color: var(--basic-gray);
@@ -285,12 +235,7 @@ color: var(--basic-black);
 }
 
 .contacts-phone {
-  text-decoration: none;
   color: var(--basic-gray);
-}
-
-.socials-list {
- list-style: none;
 }
 
 .social-button {
@@ -325,14 +270,13 @@ color: var(--basic-black);
   color: var(--basic-black);
 }
 
-.modal-name,.modal-email,.modal-text {
+.modal-field {
   font-weight: bold;
   line-height: 18px;
   color: var(--basic-black);
 }
 
 .connection-button {
-  text-decoration: none;
   color: var(--basic-white);
   background-color: var(--basic-red);
   font-weight: 500;
@@ -342,7 +286,7 @@ color: var(--basic-black);
   border-radius: 3px;
 }
 
-.modal-name,.modal-email,.modal-text {
+.modal-field {
   opacity: 1;
 }
 
@@ -351,7 +295,7 @@ color: var(--basic-black);
 }*/
 
 
-.connection-name,.connection-email,.connection-text {
+.connection-field {
   line-height: 18px;
   font: inherit;
   background-color: transparent;
@@ -359,62 +303,49 @@ color: var(--basic-black);
   border: 2px solid var(--basic-gray-light);
 }
 
-.connection-name:hover {
+.connection-field:hover {
   border: 2px solid var(--basic-gray-gray);
 }
 
-.connection-email:hover {
-  border: 2px solid var(--basic-gray-gray);
-}
-
-.connection-text:hover {
-  border: 2px solid var(--basic-gray-gray);
-}
-
-.connection-name:focus {
+.connection-field:focus {
   border: 2px solid var(--basic-black);
 }
 
-.connection-email:focus {
-  border: 2px solid var(--basic-black);
-}
-
-.connection-text:focus {
-  border: 2px solid var(--basic-black);
-}
-
-.contacts-link:hover {
+.change:hover {
   background-color: var(--basic-red-light);
 }
 
-.contacts-link:active {
+.change:active {
   background-color: var(--basic-red-dark);
-}
-
-.connection-button:hover,.product-button:hover {
-  background-color: var(--basic-red-light);
-}
-
-.connection-button:active,.product-button:active {
-  background-color: var(--basic-red-dark);
-}
-
-.product-title:hover {
-  color: var(--basic-red);
 }
 
 .product-title:active {
   color: var(--basic-black);
-  mix-blend-mode: normal;
   opacity: 0.3;
 }
 
-.filter-button:hover,.pages-navigation-item:hover,.pages-navigation-next:hover {
+.button-nav:hover {
   background-color: var(--basic-gray-graphite);
 }
 
-.filter-button:active,.pages-navigation-item:active,.pages-navigation-next:active {
+.button-nav:active {
   background-color: var(--basic-gray-graphite-light);
+}
+
+.service-button.applications:hover {
+  background-color: var(--basic-grin-light);
+}
+
+.service-button.applications:active {
+  background-color: var(--basic-grin-dark);
+}
+
+.service-button.presentations:hover {
+  background-color: var(--basic-gold-light);
+}
+
+.service-button.presentations:active {
+  background-color: var(--basic-gold-dark);
 }
 
 .pages-navigation-item:focus {
@@ -423,14 +354,6 @@ color: var(--basic-black);
   box-sizing: border-box;
   border-radius: 3px;
 }
-
-.pages-navigation-next:focus {
-  background-color: var(--basic-white);
-  border: 3px solid var(--basic-graphite);
-  box-sizing: border-box;
-  border-radius: 3px;
-}
-
 
 .modal-close {
   background-image: url("img/close-cross.svg");
@@ -446,24 +369,26 @@ color: var(--basic-black);
   text-align: center;
 }
 
-.price-title,.sorting-title,.layout-title,.features-title {
+.range-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
 }
-
-.sorting-list,.features-list,.layout-list,.product-list,.pages-navigation-list {
-  list-style: none;
-}
-
-.sorting-link-price,.sorting-link-type,.sorting-link-name {
-  text-decoration: none;
+.sorting-link {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.sorting-link-price {
   color: var(--basic-black);
+}
+
+.sorting-link-type,.sorting-link-name {
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .sorting-link-next {
@@ -524,10 +449,6 @@ color: var(--basic-black);
   text-transform: uppercase;
   color: var(--basic-black);
 }
-
-.product-title-link {
-  text-decoration: none;
-}
 .prodduct-content {
   line-height: 18px;
   color: var(--basic-gray);
@@ -542,7 +463,6 @@ color: var(--basic-black);
 }
 
 .pages-navigation-link {
-  text-decoration: none;
   background-color: inherit;
   color: var(--basic-black);
   font-weight: 500;
@@ -558,10 +478,7 @@ color: var(--basic-black);
 }
 
 .pages-navigation-next {
-  border-radius: 3px;
-  background-color: var(--basic-fon-dark);
   width: 260px;
   height: 50px;
-  text-align: center;
 }
 
