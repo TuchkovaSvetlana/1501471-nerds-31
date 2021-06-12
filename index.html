@@ -15,21 +15,19 @@
   <body>
 
     <header class="main-header">
-      <div class="main-nav-box">
-        <div class="container">
-        	<nav class="main-nav">
-        		<a class="main-header-logo">
-              <img class="logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта Nёrds">
-            </a>
-        		<ul class="site-nav list">
-        			<li><a class="site-link link" href="#">Студия</a></li>
-        			<li><a class="site-link link" href="#">Клиенты</a></li>
-        			<li><a class="site-link active link" href="catalog.html">Магазин</a></li>
-        			<li><a class="site-link link" href="#">Контакты</a></li>
-        		</ul>
-        		<a class="basket" href="#">Корзина</a>
-        	</nav>
-        </div>
+      <div class="container">
+      	<nav class="main-nav">
+      		<a class="main-header-logo">
+            <img class="logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта Nёrds">
+          </a>
+      		<ul class="site-nav list">
+      			<li><a class="site-link link" href="#">Студия</a></li>
+      			<li><a class="site-link link" href="#">Клиенты</a></li>
+      			<li><a class="site-link active link" href="catalog.html">Магазин</a></li>
+      			<li><a class="site-link link" href="#">Контакты</a></li>
+      		</ul>
+      		<a class="basket" href="#">Корзина</a>
+      	</nav>
       </div>
     </header>
 
@@ -70,17 +68,17 @@
               </div>
       			</li>
       		</ul>
-      		<ul class="slide-button list">
-      			<li>
-      				<button class="button slide-switch" type="button"></button>
-      			</li>
-      			<li>
-      				<button class="button slide-switch" type="button"></button>
-      			</li>
-      			<li>
-      				<button class="button slide-switch" type="button"></button>
-      			</li>
-      		</ul>
+        		<ul class="slide-button list">
+        			<li>
+        				<button class="button slide-switch active" type="button"></button>
+        			</li>
+        			<li>
+        				<button class="button slide-switch" type="button"></button>
+        			</li>
+        			<li>
+        				<button class="button slide-switch" type="button"></button>
+        			</li>
+        		</ul>
         </div>
       </section>
 
@@ -93,7 +91,7 @@
       					<h3 class="service-card-title">Веб-сайты</h3>
       					<p class="service-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
       				</a>
-      				<p>
+      				<p class="service-button-box">
       					<a class="button service-button site link change" href="#">Заказать</a>
       				</p>
       			</li>
@@ -102,7 +100,7 @@
       					<h3 class="service-card-title">Приложения</h3>
       					<p class="service-text">Покорите топ-10 приложений<br>в AppStore и Google Play</p>
       				</a>
-      				<p>
+      				<p class="service-button-box">
       					<a class="button service-button applications link" href="#">Заказать</a>
       				</p>
       			</li>
@@ -111,7 +109,7 @@
       					<h3 class="service-card-title">Презентации</h3>
       					<p class="service-text">Вы даже не подозреваете,<br>насколько вы изумительны!</p>
       				</a>
-      				<p>
+      				<p class="service-button-box">
       					<a class="button service-button presentations link" href="#">Заказать</a>
       				</p>
             </li>
@@ -144,13 +142,16 @@
     			  <p class="advantages-text">с 2004 года Любим точность во всем:</p>
     			  <ul class="advantages-list list">
     				  <li class="advantages-item">
-    					 <p class="advantages-content"><span class="advantages-indicator">146</span><span class="percent">%</span>Уровень самоотдачи</p>
+    					  <p class="advantages-content"><span class="advantages-indicator">146</span><span class="percent">%</span></p>
+                <p class="advantages-text-box">Уровень самоотдачи</p>
     				  </li>
     				  <li class="advantages-item">
-    					 <p class="advantages-content"><span class="advantages-indicator">100</span><span class="percent">%</span>Соблюдение сроков</p>
+    					  <p class="advantages-content"><span class="advantages-indicator">100</span><span class="percent">%</span></p>
+                <p class="advantages-text-box">Соблюдение сроков</p>
     				  </li>
     				  <li class="advantages-item">
-    					 <p class="advantages-content"><span class="advantages-indicator">50</span><span class="percent">%</span>Минимальная предоплата</p>
+    					  <p class="advantages-content"><span class="advantages-indicator">50</span><span class="percent">%</span></p>
+                <p class="advantages-text-box">Минимальная предоплата</p>
     				  </li>
     			  </ul>
   		    </section>
@@ -161,22 +162,22 @@
   			  <ul class="partners-list list">
   				  <li class="partners-item">
   					  <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo_htmlacademy.svg" width="199" height="57" alt="Логотип сайта html.academy">
+                <img class="partners-img partners-img-academy" src="img/logo_htmlacademy.png" width="199" height="57" alt="Логотип сайта html.academy">
               </a>
   				  </li>
   				  <li class="partners-item">
   					  <a href="#">
-  						  <img src="img/logo-barbershop.png" width="209" height="90" alt="Логотип сайта Барбершоп «Бородинский»">
+  						  <img class="partners-img partners-img-barbershop" src="img/logo-barbershop.png" width="209" height="90" alt="Логотип сайта Барбершоп «Бородинский»">
   					  </a>
   				  </li>
   				  <li class="partners-item">
   					  <a href="#">
-  						  <img src="img/logo-pink.png" width="185" height="52" alt="Логотип сайта Pink">
+  						  <img class="partners-img partners-img-pink" src="img/logo-pink.png" width="185" height="52" alt="Логотип сайта Pink">
   					  </a>
   				  </li>
   				  <li class="partners-item">
   					  <a href="#">
-  						  <img src="img/logo-mishka.png" width="173" height="84" alt="Логотип сайта Mishka">
+  						  <img class="partners-img partners-img-mishka" src="img/logo-mishka.png" width="173" height="84" alt="Логотип сайта Mishka">
   					  </a>
   				  </li>
   			  </ul>
@@ -203,48 +204,44 @@
 
     </main>
 
-	  <footer class="main-footer">
-      <div class="container">
-        <div class="footer-box">
-    		  <section class="socials">
-    			  <h2 class="visually-hidden">Социальные сети</h2>
-    			  <ul class="socials-list list">
-          		<li class="socials-item">
-           			<a class="socials-button link" href="#">Вконтакте</a>
-          		</li>
-          		<li class="socials-item">
-            		<a class="socials-button link" href="#">Фейсбук</a>
-          		</li>
-          		<li class="socials-item">
-            		<a class="socials-button link" href="#">Инстаграм</a>
-          		</li>
-        		</ul>
-    		  </section>
+	  <footer class="main-footer container footer-box">
+		  <section class="socials">
+			  <h2 class="visually-hidden">Социальные сети</h2>
+			  <ul class="socials-list list">
+      		<li class="socials-item">
+       			<a class="socials-button link" href="#">Вконтакте</a>
+      		</li>
+      		<li class="socials-item">
+        		<a class="socials-button link" href="#">Фейсбук</a>
+      		</li>
+      		<li class="socials-item">
+        		<a class="socials-button link" href="#">Инстаграм</a>
+      		</li>
+    		</ul>
+		  </section>
 
-    		  <section class="copyright">
-    			  <h2 class="copyright-title">Давайте дружить, это выгодно!</h2>
-    			  <p class="copyright-text">Скидка 10% для друзей из социальных сетей.</p>
-    		  </section>
-        </div>
-      </div>
+		  <section class="copyright">
+			  <h2 class="copyright-title">Давайте дружить, это выгодно!</h2>
+			  <p class="copyright-text">Скидка 10% для друзей из социальных сетей.</p>
+		  </section>
 	  </footer>
 
-    <div class="container">
+
       <section class="modal">
         <div class="modal-box">
           <h2 class="modal-title">Напишите нам</h2>
           <form class="connection-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-input-box">
-              <p>
+              <p class="modal-content">
                 <label class="modal-name modal-field" for="name">Ваше имя:</label><br>
                 <input class="connection-field connection-name" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
               </p>
-              <p>
+              <p class="modal-content">
                 <label class="modal-email modal-field" for="email">Ваш email:</label><br>
                 <input class="connection-field connection-email" type="email" name="email" id="email" placeholder="email@example.com " required>
               </p>
             </div>
-            <p>
+            <p class="modal-content">
               <label class="modal-text modal-field" for="text">Текст письма:</label><br>
               <textarea class="connection-field connection-text" rows="5" cols="80" id="text" name="text" placeholder="В свободной форме"></textarea>
             </p>
@@ -253,7 +250,7 @@
           <button class="button modal-close" type="button">Закрыть</button>
         </div>
       </section>
-    </div>
+
 
   </body>
 </html>

@@ -15,21 +15,19 @@
   <body>
 
     <header class="main-header">
-      <div class="main-nav-box">
-        <div class="container">
-          <nav class="main-nav">
-            <a class="main-header-logo" href="index.html">
-              <img class="logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта Nёrds">
-            </a>
-            <ul class="site-nav list">
-              <li><a class="site-link link" href="#">Студия</a></li>
-              <li><a class="site-link link" href="#">Клиенты</a></li>
-              <li><a class="site-link active link" href="catalog.html">Магазин</a></li>
-              <li><a class="site-link link" href="#">Контакты</a></li>
-            </ul>
-            <a class="basket" href="#">Корзина</a>
-          </nav>
-        </div>
+      <div class="container">
+        <nav class="main-nav">
+          <a class="main-header-logo" href="index.html">
+            <img class="logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта Nёrds">
+          </a>
+          <ul class="site-nav list">
+            <li><a class="site-link link" href="#">Студия</a></li>
+            <li><a class="site-link link" href="#">Клиенты</a></li>
+            <li><a class="site-link active link" href="catalog.html">Магазин</a></li>
+            <li><a class="site-link link" href="#">Контакты</a></li>
+          </ul>
+          <a class="basket" href="#">Корзина</a>
+        </nav>
       </div>
     </header>
 
@@ -112,7 +110,7 @@
                     <a class="sorting-link link" href="#">По названию</a>
                   </li>
                   <li class="sorting-item sorting-item-next">
-                    <a class="sorting-link-next link" href="#"></a>
+                    <a class="sorting-link-next link active" href="#"></a>
                   </li>
                   <li class="sorting-item sorting-item-back">
                     <a class="sorting-link-back link" href="#"></a>
@@ -129,10 +127,12 @@
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">SEDONA</h3>
                     </a>
-                    <p class="prodduct-content">Информационный сайт для туристов</p>
+                    <p class="prodduct-content">Информационный сайт<br>для туристов</p>
                     <button class="button product-button change" type="button">9 900 ₽</button>
                   </div>
-                  <img class="product-img" src="img/img-sedona.jpg" width="358" height="578" alt="Шаблон сайта SEDONA">
+                  <div class="product-img-background">
+                   <img class="product-img" src="img/img-sedona.jpg" width="358" height="578" alt="Шаблон сайта SEDONA">
+                  </div>
                 </li>
                 <li class="product-item">
                   <div class="product-description">
@@ -149,7 +149,7 @@
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">Barbershop</h3>
                     </a>
-                    <p class="prodduct-content">Сайт салона красоты.Для мужчин, да.</p>
+                    <p class="prodduct-content">Сайт салона красоты.<br>Для мужчин, да.</p>
                     <button class="button product-button change" type="button">9 900 ₽</button>
                   </div>
                   <img class="product-img" src="img/img-barbershop.jpg" width="358" height="578"
@@ -160,7 +160,7 @@
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">MISHKA</h3>
                     </a>
-                    <p class="prodduct-content">Интернет-магазин вязаных игрушек</p>
+                    <p class="prodduct-content">Интернет-магазин<br>вязаных игрушек</p>
                     <button class="button product-button change" type="button">9 900 ₽</button>
                   </div>
                   <img class="product-img" src="img/img-mishka.jpg" width="358" height="578" alt="Шаблон сайта MISHKA">
@@ -187,7 +187,7 @@
                 </li>
               </ul>
               <ul class="pages-navigation-list list">
-                <li class="pages-navigation-item button-nav">
+                <li class="pages-navigation-item button-nav active">
                   <a class="pages-navigation-link link button-nav">1</a>
                 </li>
                 <li class="pages-navigation-item button-nav">
@@ -196,8 +196,8 @@
                 <li class="pages-navigation-item button-nav">
                   <a class="pages-navigation-link link button-nav" href="#">3</a>
                 </li>
-                <li class="pages-navigation-item pages-navigation-next button-nav">
-                  <a class="pages-navigation-link link button-nav" href="#">Следующая</a>
+                <li class="pages-navigation-item button-nav">
+                  <a class="pages-navigation-link pages-navigation-next link button-nav" href="#">Следующая</a>
                 </li>
               </ul>
             </section>
@@ -225,30 +225,26 @@
 
     </main>
 
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footer-box">
-          <section class="socials">
-            <h2 class="visually-hidden">Социальные сети</h2>
-            <ul class="socials-list list">
-              <li class="socials-item">
-                <a class="socials-button link" href="#">Вконтакте</a>
-              </li>
-              <li class="socials-item">
-                <a class="socials-button link" href="#">Фейсбук</a>
-              </li>
-              <li class="socials-item">
-                <a class="socials-button link" href="#">Инстаграм</a>
-              </li>
-            </ul>
-          </section>
+    <footer class="main-footer container footer-box">
+      <section class="socials">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="socials-list list">
+          <li class="socials-item">
+            <a class="socials-button link" href="#">Вконтакте</a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-button link" href="#">Фейсбук</a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-button link" href="#">Инстаграм</a>
+          </li>
+        </ul>
+      </section>
 
-          <section class="copyright">
-            <h2 class="copyright-title">Давайте дружить, это выгодно!</h2>
-            <p class="copyright-text">Скидка 10% для друзей из социальных сетей.</p>
-          </section>
-        </div>
-      </div>
+      <section class="copyright">
+        <h2 class="copyright-title">Давайте дружить, это выгодно!</h2>
+        <p class="copyright-text">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
     </footer>
 
     <!-- <div class="container">
