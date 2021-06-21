@@ -40,22 +40,21 @@
               <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="cost">
                   <legend class="price-title range-title">стоимость:</legend>
-                   <div class="box-filter-range">
-                    <div class="range-scale">
-                      <div class="range-bar" style="width: 70%; margin-left: 0%;">
-                        <div class="range-toggle range-toggle-min" tabindex="0" style="left: 5%">
+                    <div class="range-filter">
+                      <div class="range-controls">
+                        <div class="range-scale">
+                          <div class="range-bar" style="width: 65%; margin-left: 0%;"></div>
                         </div>
-                        <div class="range-toggle range-toggle-max" tabindex="0" style="left: 60%">
-                        </div>
+                        <div class="range-toggle range-toggle-min" tabindex="0" style="left: 7%"></div>
+                        <div class="range-toggle range-toggle-max" tabindex="0" style="left: 62%"></div>
                       </div>
+                      <p class="filter-importance">
+                        <label for="min">от</label>
+                        <input class="filter-importance-min" type="text" name="min" id="min" value="0">
+                        <label for="max">до</label>
+                        <input class="filter-importance-max" type="text" name="max" id="max" value="15 000">
+                      </p>
                     </div>
-                   </div>
-                  <p class="filter-importance">
-                    <label for="min">от</label>
-                    <input class="filter-importance-min" type="text" name="min" id="min" value="0">
-                    <label for="max">до</label>
-                    <input class="filter-importance-max" type="text" name="max" id="max" value="15000">
-                  </p>
                 </fieldset>
                 <h2 class="visually-hidden">Фильтр</h2>
                 <fieldset class="layout">
@@ -95,7 +94,8 @@
                       <label class="label-checkbox" for="filter-gallery">Галерея</label>
                     </li>
                     <li class="features-item">
-                      <input class="visually-hidden input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                      <input class="visually-hidden input-checkbox" type="checkbox" name="basket" id="filter-basket"
+                        disabled>
                       <label class="label-checkbox" for="filter-basket">Корзина</label>
                     </li>
                   </ul>
@@ -132,28 +132,24 @@
               <h2 class="visually-hidden">Шаблоны сайтов</h2>
               <ul class="product-list list">
                 <li class="product-item">
-                  <!-- <div class="product-description">
+                  <div class="product-description">
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">SEDONA</h3>
                     </a>
                     <p class="prodduct-content">Информационный сайт<br>для туристов</p>
                     <button class="button product-button change" type="button">9 900 ₽</button>
-                  </div> -->
-                  <div class="product-img-background">
-                    <img class="product-img" src="img/img-sedona.jpg" width="358" height="578" alt="Шаблон сайта SEDONA">
                   </div>
+                  <img class="product-img" src="img/img-sedona.jpg" width="358" height="578" alt="Шаблон сайта SEDONA">
                 </li>
                 <li class="product-item">
-                  <!-- <div class="product-description">
+                  <div class="product-description">
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">Pink App</h3>
                     </a>
                     <p class="prodduct-content">Продуктовый лендинг приложения для iOS и Android</p>
                     <button class="button product-button change" type="button">9 900 ₽</button>
-                  </div> -->
-                  <div class="product-img-background">
-                    <img class="product-img" src="img/img-pink.jpg" width="358" height="578" alt="Шаблон сайта PINK">
                   </div>
+                  <img class="product-img" src="img/img-pink.jpg" width="358" height="578" alt="Шаблон сайта PINK">
                 </li>
                 <li class="product-item">
                   <div class="product-description">
@@ -163,10 +159,8 @@
                     <p class="prodduct-content">Сайт салона красоты.<br>Для мужчин, да.</p>
                     <button class="button product-button change" type="button">9 900 ₽</button>
                   </div>
-                  <div class="product-img-background">
-                    <img class="product-img" src="img/img-barbershop.jpg" width="358" height="578"
-                     alt="Шаблон сайта барбершоп BORODINSKI">
-                  </div>
+                  <img class="product-img" src="img/img-barbershop.jpg" width="358" height="578"
+                   alt="Шаблон сайта барбершоп BORODINSKI">
                 </li>
                 <li class="product-item">
                   <div class="product-description">
@@ -176,9 +170,7 @@
                     <p class="prodduct-content">Интернет-магазин<br>вязаных игрушек</p>
                     <button class="button product-button change" type="button">9 900 ₽</button>
                   </div>
-                  <div class="product-img-background">
-                   <img class="product-img" src="img/img-mishka.jpg" width="358" height="578" alt="Шаблон сайта MISHKA">
-                  </div>
+                  <img class="product-img" src="img/img-mishka.jpg" width="358" height="578" alt="Шаблон сайта MISHKA">
                 </li>
                 <li class="product-item">
                   <div class="product-description">
@@ -188,9 +180,7 @@
                     <p class="prodduct-content">Лендинг курсов повышения квалификации</p>
                     <button class="button product-button change" type="button">9 900 ₽</button>
                   </div>
-                  <div class="product-img-background">
-                    <img class="product-img" src="img/img-aplus.jpg" width="358" height="578" alt="Шаблон сайта A Plus">
-                  </div>
+                  <img class="product-img" src="img/img-aplus.jpg" width="358" height="578" alt="Шаблон сайта A Plus">
                 </li>
                 <li class="product-item">
                   <div class="product-description">
@@ -200,14 +190,12 @@
                     <p class="prodduct-content">Промо-сайт производителя крафтового кваса</p>
                     <button class="button product-button change" type="button">9 900 ₽</button>
                   </div>
-                  <div class="product-img-background">
-                    <img class="product-img" src="img/img-kvast.jpg" width="358" height="578" alt="Шаблон сайта КВАСТ">
-                  </div>
+                  <img class="product-img" src="img/img-kvast.jpg" width="358" height="578" alt="Шаблон сайта КВАСТ">
                 </li>
               </ul>
               <ul class="pages-navigation-list list">
-                <li class="pages-navigation-item button-nav active">
-                  <a class="pages-navigation-link link button-nav">1</a>
+                <li class="pages-navigation-item button-nav">
+                  <a class="pages-navigation-link active link button-nav">1</a>
                 </li>
                 <li class="pages-navigation-item button-nav">
                   <a class="pages-navigation-link link button-nav" href="#">2</a>
