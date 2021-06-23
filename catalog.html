@@ -18,7 +18,7 @@
       <div class="container">
         <nav class="main-nav">
           <a class="main-header-logo" href="index.html">
-            <img class="logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта Nёrds">
+            <img class="logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип-ссылка на главную страницу сайта Nёrds">
           </a>
           <ul class="site-nav list">
             <li><a class="site-link link" href="#">Студия</a></li>
@@ -119,10 +119,14 @@
                     <a class="sorting-link link" href="#">По названию</a>
                   </li>
                   <li class="sorting-item sorting-item-next">
-                    <a class="sorting-link-next link active" href="#"></a>
+                    <a class="sorting-link-next link active" href="#" tabindex="0">
+                      <span class="visually-hidden">Вперёд</span>
+                    </a>
                   </li>
                   <li class="sorting-item sorting-item-back">
-                    <a class="sorting-link-back link" href="#"></a>
+                    <a class="sorting-link-back link" href="#" tabindex="0">
+                      <span class="visually-hidden">Назад</span>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -131,7 +135,7 @@
             <section class="product">
               <h2 class="visually-hidden">Шаблоны сайтов</h2>
               <ul class="product-list list">
-                <li class="product-item">
+                <li class="product-item" tabindex="0">
                   <div class="product-description">
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">SEDONA</h3>
@@ -141,7 +145,7 @@
                   </div>
                   <img class="product-img" src="img/img-sedona.jpg" width="358" height="578" alt="Шаблон сайта SEDONA">
                 </li>
-                <li class="product-item">
+                <li class="product-item" tabindex="0">
                   <div class="product-description">
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">Pink App</h3>
@@ -151,7 +155,7 @@
                   </div>
                   <img class="product-img" src="img/img-pink.jpg" width="358" height="578" alt="Шаблон сайта PINK">
                 </li>
-                <li class="product-item">
+                <li class="product-item" tabindex="0">
                   <div class="product-description">
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">Barbershop</h3>
@@ -162,7 +166,7 @@
                   <img class="product-img" src="img/img-barbershop.jpg" width="358" height="578"
                    alt="Шаблон сайта барбершоп BORODINSKI">
                 </li>
-                <li class="product-item">
+                <li class="product-item" tabindex="0">
                   <div class="product-description">
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">MISHKA</h3>
@@ -172,7 +176,7 @@
                   </div>
                   <img class="product-img" src="img/img-mishka.jpg" width="358" height="578" alt="Шаблон сайта MISHKA">
                 </li>
-                <li class="product-item">
+                <li class="product-item" tabindex="0">
                   <div class="product-description">
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">A Plus</h3>
@@ -182,7 +186,7 @@
                   </div>
                   <img class="product-img" src="img/img-aplus.jpg" width="358" height="578" alt="Шаблон сайта A Plus">
                 </li>
-                <li class="product-item">
+                <li class="product-item" tabindex="0">
                   <div class="product-description">
                     <a class="product-title-link link" href="#">
                       <h3 class="product-title">КВАСТ</h3>
@@ -213,22 +217,25 @@
       </div>
 
       <section class="contacts">
-        <div class="map-box">
+        <div class="container contacts-content">
           <div class="contacts-box">
             <h2 class="visually-hidden">Контактная информация</h2>
             <p class="contacts-text">
               <span>NЁRDS DESIGN STUDIO</span><br>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург
             </p>
             <p class="contacts-text-phone">
-              <a class="contacts-phone link" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="contacts-phone link" href="tel:+78005558628"><span class="visually-hidden">Контактный телефон</span>
+              +7 800 555-86-28</a>
             </p>
             <p class="contacts-button">
               <a class="contacts-link button link change" href="#">Напишите нам</a>
             </p>
           </div>
-          <img class="contacts-map-img" src="img/map.png" width="1440" height="416" alt="Карта">
           <img class="contacts-marker-img" src="img/map-marker.png" width="231" height="190" alt="Маркер на карте указывает
           месторасположение">
+        </div>
+        <div class="map-box-img">
+          <img class="contacts-map-img" src="img/map.png" width="1440" height="416" alt="Карта">
         </div>
       </section>
 
