@@ -8,8 +8,8 @@
     <link rel="manifest" href="manifest.webmanifest">
     <title>Нёрдс каталог</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -32,7 +32,9 @@
     </header>
 
     <main class="main">
-      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+      <div class="catalog-title-box">
+        <h1 class="catalog-title container">Магазин готовых шаблонов</h1>
+      </div>
       <div class="container">
         <div class="filter-container">
           <div class="filter-box">
@@ -40,21 +42,21 @@
               <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="cost">
                   <legend class="price-title range-title">стоимость:</legend>
-                    <div class="range-filter">
-                      <div class="range-controls">
-                        <div class="range-scale">
-                          <div class="range-bar" style="width: 65%; margin-left: 0%;"></div>
-                        </div>
-                        <div class="range-toggle range-toggle-min" tabindex="0" style="left: 7%"></div>
-                        <div class="range-toggle range-toggle-max" tabindex="0" style="left: 62%"></div>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="range-scale">
+                        <div class="range-bar" style="width: 65%; margin-left: 0%;"></div>
                       </div>
-                      <p class="filter-importance">
-                        <label for="min">от</label>
-                        <input class="filter-importance-min" type="text" name="min" id="min" value="0">
-                        <label for="max">до</label>
-                        <input class="filter-importance-max" type="text" name="max" id="max" value="150 000">
-                      </p>
+                      <div class="range-toggle range-toggle-min" tabindex="0" style="left: 7%"></div>
+                      <div class="range-toggle range-toggle-max" tabindex="0" style="left: 62%"></div>
                     </div>
+                    <p class="filter-importance">
+                      <label for="min">от</label>
+                      <input class="filter-importance-min" type="text" name="min" id="min" value="0">
+                      <label for="max">до</label>
+                      <input class="filter-importance-max" type="text" name="max" id="max" value="150 000">
+                    </p>
+                  </div>
                 </fieldset>
                 <h2 class="visually-hidden">Фильтр</h2>
                 <fieldset class="layout">
@@ -100,7 +102,7 @@
                     </li>
                   </ul>
                 </fieldset>
-                  <button class="button filter-button button-nav" type="submit">Показать</button>
+                <button class="button filter-button button-nav" type="submit">Показать</button>
               </form>
             </section>
           </div>
@@ -198,8 +200,8 @@
                 </li>
               </ul>
               <ul class="pages-navigation-list list">
-                <li class="pages-navigation-item button-nav">
-                  <a class="pages-navigation-link active link button-nav">1</a>
+                <li class="pages-navigation-item">
+                  <a class="pages-navigation-link active link">1</a>
                 </li>
                 <li class="pages-navigation-item button-nav">
                   <a class="pages-navigation-link link button-nav" href="#">2</a>
@@ -232,8 +234,8 @@
             </p>
           </div>
         </div>
-        <div class="map-box-img">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8178647588688!2d30.31519231617443!3d59.96834466666385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1624648644647!5m2!1sru!2sru" width="100%" height="416" allowfullscreen title="Офис находится по адресу наб. Реки Карповки,5 лит П, Санкт-Петербург">
+        <div class="map-box">
+          <iframe class="map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8178647588688!2d30.31519231617443!3d59.96834466666385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1624648644647!5m2!1sru!2sru" width="1440" height="416" allowfullscreen title="Офис находится по адресу наб. Реки Карповки,5 лит П, Санкт-Петербург">
           </iframe>
         </div>
       </section>
@@ -275,30 +277,30 @@
     </footer>
 
     <section class="modal">
-        <div class="modal-box">
-          <h2 class="modal-title">Напишите нам</h2>
-          <form class="connection-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="modal-input-box">
-              <p class="modal-content">
-                <label class="modal-name modal-field" for="name">Ваше имя:</label>
-                <input class="connection-field connection-name" type="text" name="name" id="name" placeholder="Имя Фамилия"> <!--class="invalid" должен добавляться при ошибке введенных данных -->
-              </p>
-              <p class="modal-content">
-                <label class="modal-email modal-field" for="email">Ваш email:</label>
-                <input class="connection-field connection-email" type="email" name="email" id="email" placeholder="email@example.com">
-              </p>
-            </div>
+      <div class="modal-box">
+        <h2 class="modal-title">Напишите нам</h2>
+        <form class="connection-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="modal-input-box">
             <p class="modal-content">
-              <label class="modal-text modal-field" for="text">Текст письма:</label>
-              <textarea class="connection-field connection-text" rows="4" cols="80" id="text" name="text" placeholder="В свободной форме"></textarea>
+              <label class="modal-name modal-field" for="name">Ваше имя:</label>
+              <input class="connection-field connection-name" type="text" name="name" id="name" placeholder="Имя Фамилия"> <!--class="invalid" должен добавляться при ошибке введенных данных -->
             </p>
-            <button class="button connection-button change" type="submit">Отправить</button>
-          </form>
-          <button class="button modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-        </div>
-      </section>
+            <p class="modal-content">
+              <label class="modal-email modal-field" for="email">Ваш email:</label>
+              <input class="connection-field connection-email" type="email" name="email" id="email" placeholder="email@example.com">
+            </p>
+          </div>
+          <p class="modal-content">
+            <label class="modal-text modal-field" for="text">Текст письма:</label>
+            <textarea class="connection-field connection-text" rows="4" cols="80" id="text" name="text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button connection-button change" type="submit">Отправить</button>
+        </form>
+        <button class="button modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </section>
 
-      <script src="script.min.js"></script>
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>
